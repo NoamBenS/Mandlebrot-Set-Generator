@@ -78,24 +78,6 @@ void destroy_everything();
  * @param argv: the arguments
  * 
  * 
- * GOALS 
- * 1: create img_dim column threads. make sure they have a way to know what row they're up to
- * 2: create engines comp engines.create struct array for engines (of size engines).
- *          Figure out how to do that thing with array indices and mutexing them. Also, make sure info is actually used before you continue.
- * 3: create array for printing. add mutex to it. have it also increment a counter. when counter == img_dim, then reset counter
-     *       print thread should also have a global variable. if the variable == img_dim, close the file and exit.
- * 4: column threads choose randomly.
- * 5: column threads calculate the x, y coordiante in the complex plane for that thread row and column
- * 6: mutexes to access everything
- * 7: thread barrier.
- * 
- * @TODO NOW IMMEDIATELY
- * 1: create engines to do the arrays
- *  2: CREATE ENGINE METHOD
- * 3: create column threads
- * 3b: create print thread
- * 4: thread barrier
- * 5: create array for prints
  * 
 */
 int main(int argc, char **argv)  {
